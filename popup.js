@@ -1,5 +1,5 @@
 const updateIcon = (enabled) => {
-  const iconPath = enabled ? "icon128.png" : "icon128-g.png";
+  const iconPath = enabled ? "icon128.png" : "icon128-gray.png";
   chrome.action.setIcon({ path: iconPath });
 };
 
