@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "HH Resume Auto Clicker",
+  "version": "1.0.0",
+  "description": "Автоматическое нажатие кнопки поднятия резюме на hh.kz/hh.ru",
+  "permissions": [
+    "storage"
+  ],
+  "icons": {
+    "16": "icon128.png",
+    "48": "icon128.png",
+    "128": "icon128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon128.png",
+    "default_title": "HH Auto Clicker"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.hh.kz/*",
+        "*://*.hh.ru/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
+}
