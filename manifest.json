@@ -1,10 +1,16 @@
 {
   "manifest_version": 3,
   "name": "HH Resume Auto Clicker",
-  "version": "1.0.0",
-  "description": "Автоматическое нажатие кнопки поднятия резюме на hh.kz/hh.ru",
+  "version": "1.1.0",
+  "description": "Automatic resume boost button clicking on hh.kz/hh.ru with smart reload scheduling",
   "permissions": [
-    "storage"
+    "storage",
+    "alarms",
+    "tabs"
+  ],
+  "host_permissions": [
+    "*://*.hh.kz/*",
+    "*://*.hh.ru/*"
   ],
   "icons": {
     "16": "icon128.png",

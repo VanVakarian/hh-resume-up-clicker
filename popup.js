@@ -14,5 +14,5 @@ document.getElementById("extensionToggle").addEventListener("change", (e) => {
   const enabled = e.target.checked;
   chrome.storage.local.set({ extensionEnabled: enabled });
   updateIcon(enabled);
-  console.log("HH Auto Clicker:", enabled ? "✅ Включено" : "❌ Выключено");
+  console.log("HH Auto Clicker:", enabled ? "✅ Enabled" : "❌ Disabled");
 });
